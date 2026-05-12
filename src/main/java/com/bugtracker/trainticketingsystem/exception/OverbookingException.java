@@ -1,4 +1,7 @@
-package com.bugtracker.trainticketingsystem.exception;
+package com.trainticket.exception;
 
-public class OverbookingException {
+public class OverbookingException extends RuntimeException {
+    public OverbookingException(String message) {
+        super(message);
+    }
 }
